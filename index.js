@@ -23,8 +23,7 @@ module.exports = function (bp) {
 
 	bp.hear({
 		platform: 'slack',
-		bot_mentioned: true,
-		type: 'message'
+		bot_mentioned: true
 	}, (event, next) => {
 		console.log(event)
 	})

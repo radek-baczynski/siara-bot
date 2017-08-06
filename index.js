@@ -21,14 +21,14 @@
 
 module.exports = function (bp) {
 
-	// bp.hear({
-	// 	platform: 'slack',
-	// 	bot_mentioned: true,
-	// 	type: 'message'
-	// }, (event, next) => {
-	// 	console.log(event)
-	// })
-	// You can also pass a matcher object to better filter events
+	bp.hear({
+		platform: 'slack',
+		bot_mentioned: true,
+		type: 'message'
+	}, (event, next) => {
+		console.log(event)
+	})
+
 	bp.hear(/^naucz @siara2 (.+)/i, (event, next) => {
 	  event.reply('#teach', {
 	    sentence: event.captured[0]

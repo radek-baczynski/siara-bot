@@ -6,7 +6,8 @@
   "dependencies": {
     "botpress": "1.x",
     "botpress-slack": "^1.0.23",
-    "botpress-web": "1.x"
+    "botpress-web": "1.x",
+    "sqlite3": "^3.1.9"
   },
   "scripts": {
     "start": "botpress start",
